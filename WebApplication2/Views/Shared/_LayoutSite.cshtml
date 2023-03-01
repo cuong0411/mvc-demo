@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@Page.Title</title>
+
+    <!-- Font Awesome -->
+    <link href="~/Assessts/fontawesome-free-6.3.0-web/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="~/Assessts/fontawesome-free-6.3.0-web/css/solid.min.css" rel="stylesheet" />
+    <link href="~/Assessts/fontawesome-free-6.3.0-web/css/brands.min.css" rel="stylesheet" />
+    <link href="~/Assessts/fontawesome-free-6.3.0-web/css/regular.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap 5-->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Your style-->
+    <link href="~/Assessts/CSS/LayoutSite.css" rel="stylesheet" />
+
+    @RenderSection("head", required: false)
+</head>
+<body>
+    <div class="container bg-main">
+        <div class="row">
+            <div class="col-md-4">Test 1</div>
+            <div class="col-md-4">Test 2</div>
+            <div class="col-md-4">Test 3</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Test bootstrap 5</h2>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+        <div class="p-3 mb-2 bg-primary-subtle text-emphasis-primary">.bg-primary-subtle</div>
+        <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+        <div class="p-3 mb-2 bg-secondary-subtle text-emphasis-secondary">.bg-secondary-subtle</div>
+        <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+        <div class="p-3 mb-2 bg-success-subtle text-emphasis-success">.bg-success-subtle</div>
+        <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+        <div class="p-3 mb-2 bg-danger-subtle text-emphasis-danger">.bg-danger-subtle</div>
+        <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+        <div class="p-3 mb-2 bg-warning-subtle text-emphasis-warning">.bg-warning-subtle</div>
+        <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+        <div class="p-3 mb-2 bg-info-subtle text-emphasis-info">.bg-info-subtle</div>
+        <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+        <div class="p-3 mb-2 bg-light-subtle text-emphasis-light">.bg-light-subtle</div>
+        <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+        <div class="p-3 mb-2 bg-dark-subtle text-emphasis-dark">.bg-dark-subtle</div>
+        <p class="p-3 mb-2 bg-body-secondary">.bg-body-secondary</p>
+        <p class="p-3 mb-2 bg-body-tertiary">.bg-body-tertiary</p>
+
+        <div class="p-3 mb-2 bg-body text-body">.bg-body</div>
+        <div class="p-3 mb-2 bg-black text-white">.bg-black</div>
+        <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+        <div class="p-3 mb-2 bg-transparent text-body">.bg-transparent</div>
+    </div>
+
+    <div class="container">
+        <h2>Test Font Awesome</h2>
+        <i class="fa-solid fa-user"></i>
+        <!-- uses solid style -->
+        <i class="fa-brands fa-github-square"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <!-- uses brand style -->
+    </div>
+
+    @RenderBody()
+
+    <!-- Bootstrap 5-->
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+</body>
+</html>
